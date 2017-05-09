@@ -19,3 +19,11 @@ $('.btn').on('click', function() {
     dataType: 'jsonp',
   });
 });
+
+$( document ).ajaxSuccess(function( event, request, settings ) {
+  alert( "Successful Request!" );
+});
+
+$( document ).ajaxError(function( event, request, settings ) {
+  alert( "Check yourself!" );;
+});
